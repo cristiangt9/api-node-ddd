@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { UserUseCase } from "../../application/userUseCase";
+import { UserUseCase } from "../../application/userUseCase.service";
 let helper = require("../helpers/helpers.ts");
 
 export class UserController {

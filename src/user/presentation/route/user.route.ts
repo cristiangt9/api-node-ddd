@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { UserUseCase } from '../../application/userUseCase';
+import { UserUseCase } from '../../application/userUseCase.service';
 import { UserController } from '../controller/user.ctrl';
 // import { MockRepository } from '../repository/mock.repository';
-import { MongoRepository } from '../repository/mongo.repository';
+import { MongoRepository } from '../../infrastructure/repository/mongo.repository';
 
 const route = Router();
 // const userRepository = new MockRepository();

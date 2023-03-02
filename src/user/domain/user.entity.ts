@@ -1,6 +1,6 @@
 export interface UserEntity {
-    name:string;
-    email:string;
-    description:string;
-    uuid:string;
+    readonly name:string;
+    readonly email:string;
+    readonly description:string;
+    readonly uuid:string;
 }

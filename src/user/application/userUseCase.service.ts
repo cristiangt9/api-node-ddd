@@ -1,7 +1,7 @@
 import { UserRepository } from "../domain/user.repository";
 import { UserValue } from "../domain/user.value";
 
-// aqui se implementa la lógica de los casos de uso
+// aqui se implementa la lógica de los casos de uso como servicios
 export class UserUseCase {
     constructor(private readonly userRepository:UserRepository){
         

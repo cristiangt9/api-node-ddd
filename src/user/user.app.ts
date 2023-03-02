@@ -2,7 +2,7 @@ import "dotenv/config";
 import express from 'express';
 import cors from 'express';
 import dbInit from './infrastructure/db/mongo';
-import userRoute from './infrastructure/route/user.route';
+import userRoute from './presentation/route/user.route';
 
 
 const app = express();

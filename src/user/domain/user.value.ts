@@ -15,7 +15,4 @@ export class UserValue implements UserEntity {
         this.description = description ?? "default";
     }
 
-    // __get (name) {
-    //     return undefined;
-    // }
 }
