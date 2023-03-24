@@ -9,5 +9,9 @@
         "emitDecoratorMetadata": true,
         "esModuleInterop": true 
     },
-    "include": ["./src/*"]
-  }
+    "include": [
+        "./src/user/*"
+    ],
+    "exclude": ["node_modules"]
+    
+}
