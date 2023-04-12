@@ -1,7 +1,6 @@
 import "dotenv/config";
-import express from 'express';
-import cors from 'express';
-import dbInit from './infrastructure/db/mongo';
+import { express, cors } from 'express';
+import dbInit from './infrastructure/repository/mongo';
 import userRoute from './presentation/route/user.route';
 
 

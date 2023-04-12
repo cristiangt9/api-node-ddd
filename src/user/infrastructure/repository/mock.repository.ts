@@ -1,7 +1,5 @@
 import { UserEntity } from "../../domain/user.entity";
 import { UserRepository } from "../../domain/user.repository";
-import { UserValue } from "../../domain/user.value";
-import UserModel from "../model/user.schema";
 
 const MOCK_USER = {
     uuid: '0001-001-001',
@@ -11,6 +9,10 @@ const MOCK_USER = {
 };
 
 export class MockRepository implements UserRepository {
+    async findUserByEmail(email: string): Promise<UserEntity | null> {
+        const user = MOCK_USER;
+        return user;
+    }
     async findUserById(uuid: string): Promise<UserEntity | null> {
         const user = MOCK_USER;
         return user;
@@ -19,9 +21,9 @@ export class MockRepository implements UserRepository {
         const user = MOCK_USER;
         return user;
     }
-    async listUser(): Promise<UserEntity[] | null> {
+    async listUsers(): Promise<UserEntity[] | null> {
         const users = [MOCK_USER,MOCK_USER,MOCK_USER];
         return users;
-    }
+    }  
 
 }
