@@ -21,7 +21,7 @@ export class UserController {
     public getUser = async (req: Request, res: Response) => {
         try {
             const { uuid = '' } = req.params;
-            const user = await this.userUseCase.getDatailUser(`${uuid}`);
+            const user = await this.userUseCase.getDetailUser(`${uuid}`);
 
             res.send(helper.defaultResponse(!!user, user));
         } catch (error) {

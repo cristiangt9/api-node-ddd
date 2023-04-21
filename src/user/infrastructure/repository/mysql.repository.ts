@@ -2,7 +2,7 @@ import { UserEntity } from "../../domain/user.entity";
 import { UserRepository } from "../../domain/user.repository";
 import UserModel from "./mongo/models/user.schema";
 
-export class MongoRepository implements UserRepository {
+export class MysqlRepository implements UserRepository {
     async findUserByEmail(email: string): Promise<UserEntity | null> {
         const user = await UserModel.findOne({email});
         return user;

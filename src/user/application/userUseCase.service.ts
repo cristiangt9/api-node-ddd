@@ -19,9 +19,8 @@ export class UserUseCase {
         return await this.userRepository.registerUser(userValue);
     }
 
-    public getDatailUser = async (uuid: string) => {
-        const user = await this.userRepository.findUserById(uuid);
-        return user;
+    public getDetailUser = async (uuid: string) => {
+        return await this.userRepository.findUserById(uuid);
     }
 
 }
